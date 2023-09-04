@@ -5,19 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&family=Tangerine:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!--Header-->
 
     <header>
       <nav>
         <!-- TODO: ссылку проверить -->
-        <a class="logo" href="./index.html">WebStudio</a>
+        <a class="logo" href="./index.html"
+          ><span class="logo-accent">Web</span>Studio</a
+        >
         <!--.index.html-->
 
         <ul>
@@ -52,17 +67,17 @@
     <main>
       <!-- Hero section -->
 
-      <section>
+      <section class="hero-section">
         <h1>Effective Solutions for Your Business</h1>
 
-        <button type="button">Order Service</button>
+        <button class="button" type="button">Order Service</button>
       </section>
 
       <!--Section_1-->
 
-      <section class="fon">
+      <section>
         <!-- TODO: hide this title visually -->
-        <h2>About Us</h2>
+        <h2 class="visually-hidden">About Us</h2>
 
         <ul>
           <li>
@@ -226,10 +241,13 @@
 
     <!--Footer-->
 
-    <footer class="fon">
-      <a href="./index.html">WebStudio</a>
+    <footer class="footer">
+      <a class="logo" href="./index.html"
+        ><span class="logo-accent">Web</span
+        ><span class="logo-ac-foot">Studio</span></a
+      >
 
-      <p class="footer">
+      <p class="footer-text">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
