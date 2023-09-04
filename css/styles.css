@@ -6,7 +6,9 @@
     --c-background-light: #FFF;
     --c-background-centre: #F4F4FD;
     --c-hover-active: #404BBF;
-}
+    --c-contacts: #434455;
+} 
+
 
 /* Base */
 
@@ -34,21 +36,26 @@ ul {
 /* Header */
 
 .logo {
-color: var(--c-text);
-    font-family: Raleway;
+
+
+    color: var(--c-brand);
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.16;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase
 
 }
 
 .logo-accent {
-    color: var(--c-brand);
-        font-family: Raleway;
+color: var(--c-text);
+    font-family: 'Raleway', sans-serif;
         font-size: 18px;
     font-weight: 700;
-        line-height: 1.16;    
-        letter-spacing: 0.54px;
+        line-height: 1.17;    
+        letter-spacing: 0.03em;
+        text-transform: uppercase
 }
 
 .nav-link {
@@ -58,9 +65,18 @@ color: var(--c-text);
         letter-spacing: 0.32px;
 }
 
-.nav-link:active {
+.nav-link:hover {
     color: var(--c-hover-active);
 
+}
+
+.nav-link:focus {
+    color: var(--c-hover-active);
+
+}
+
+.address {
+    font-style: normal
 }
 
 .contacts {
@@ -68,26 +84,32 @@ color: var(--c-text);
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-    color: #434455;
+    color: var(--c-contacts);
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
 
-.contacts:active {
+.contacts:hover {
     color: var(--c-hover-active);
 }
+
+.contacts:focus {
+    color: var(--c-hover-active);
+}
+
+/* Section 1 */
 
 .hero-section {
 background-color: #2E2F42;
 }
 
-h1 {
+.zagolovok {
 color: var(--c-background-light);
 
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 1.12px;
-       
+    text-align: center;
 }
 
 .button {
@@ -109,6 +131,13 @@ color: var(--c-background-light);
     
 }
 
+.button:focus {
+    background-color: var(--c-hover-active);
+
+}
+
+/* Section 2 */
+
 .visually-hidden {
 position: absolute;
     width: 1px;
@@ -123,19 +152,9 @@ position: absolute;
 }
 
 
-.team {
-    background-color: var(--c-background-centre);
-}
 
-h2 {
-color: var(--c-text);
 
-    font-size: 40px;
-    font-weight: 600;
-
-}
-
-h3 {
+.opisanie {
 color: var(--c-text);
     font-size: 20px;
     font-weight: 500;
@@ -143,13 +162,38 @@ color: var(--c-text);
     letter-spacing: 0.4px;
 }
 
-p {
-    color: var(--c-text);
+.text {
+    color: var(--c-contacts);
         font-style: normal;
         line-height: 1.5;
         letter-spacing: 0.32px;
 }
 
+/* Section 3 */
+
+.team {
+    background-color: var(--c-background-centre);
+}
+
+.zagolovok {
+color: var(--c-text);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center
+}
+
+.photo {
+    background-color: var(--c-background-light)
+}
+
+.posit {
+    font-size: 16px
+}
+
+/* Section 4 */
 
 /*Footer*/
 
@@ -169,11 +213,11 @@ background-color: var(--c-text);
 }
 
 .logo-ac-foot {
-    color: var(--c-background-centre);
-        font-family: Raleway;
+        color: var(--c-background-centre);
+        font-family: 'Raleway', sans-serif;
         font-size: 18px;
         font-weight: 700;
-        line-height: 1.16;
-        letter-spacing: 0.54px;
-        text-transform: uppercase;
-}
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase
+    }
