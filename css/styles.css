@@ -105,10 +105,9 @@ background-color: #2E2F42;
 
 .zagolovok {
 color: var(--c-background-light);
-
     font-size: 56px;
     line-height: 1.07;
-    letter-spacing: 1.12px;
+    letter-spacing: 0.02em;
     text-align: center;
 }
 
@@ -175,7 +174,7 @@ color: var(--c-text);
     background-color: var(--c-background-centre);
 }
 
-.zagolovok {
+.drugoizagolovok {
 color: var(--c-text);
     font-size: 36px;
     font-weight: 700;
