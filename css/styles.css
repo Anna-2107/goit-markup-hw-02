@@ -114,9 +114,6 @@ color: var(--c-background-light);
 .button {
 
 color: var(--c-background-light);
-    display: inline-flex;
-        padding: 16px 32px;
-        border-radius: 4px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
